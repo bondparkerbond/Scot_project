@@ -1,3 +1,10 @@
 <h1>Education</h1>
 <p>Scot graduated from a very prestegious school in New Jersey. He then decided that his one true love was programming and followed the timeless advice: "Go West young man!"  He is currently attending Dev Point Labs to become a technology Guru.</p>
+<% @schools.each do |edu| %>
+  <p><%= edu.school %>:
+  <%= edu.studied %> 
+  <%= edu.level %>
+  <%= edu.finished %>
+  </p>
 
+<% end %>

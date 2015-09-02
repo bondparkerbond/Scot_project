@@ -6,8 +6,10 @@ class PagesController < ApplicationController
   end
 
   def work_history
+    @works = Work.all
   end
 
   def education
+    @schools = School.all
   end
 end

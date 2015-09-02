@@ -1,2 +1,9 @@
 <h1>Scot's Work History</h1>
 <p>Scot worked as a Pharmacy tech.  He now distributes code instead of pills as a Jr. Web Developer for Experimental Pastries LLC</p>
+<% @works.each do |work| %>
+  <p><%= work.employer %> :
+  start
+  end
+  <%= work.description %></p>
+
+<% end %>
